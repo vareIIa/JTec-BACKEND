@@ -246,7 +246,7 @@ CREATE TABLE order_item (
 The backend generates EMV-formatted PIX QR code payloads compliant with [Brazilian Central Bank specifications](https://www.bcb.gov.br/).
 
 **Generated payload includes:**
-- **PIX Key:** `+5531985975200` (personal key)
+- **PIX Key:** Configurada via variável de ambiente `PIX_KEY`
 - **Merchant Name:** `JTEC`
 - **Merchant City:** `BELO HORIZONTE`
 - **Amount:** Order total
@@ -258,7 +258,7 @@ The backend generates EMV-formatted PIX QR code payloads compliant with [Brazili
 ### Configuration
 Edit `core/views.py`:
 ```python
-PIX_KEY = "+5531985975200"
+PIX_KEY = "sua-chave-pix-aqui"
 MERCHANT_NAME = "JTEC"
 MERCHANT_CITY = "BELO HORIZONTE"
 ```
@@ -482,12 +482,10 @@ JTec-BACKEND/
 
 ## 📄 License & Contact
 
-Built with ❤️ by JTEC — João Vitor C. Varella
+Built with ❤️ by JTEC — Fundadores
 
-- **Email:** jvvarella@hotmail.com
-- **Phone:** [(31) 98597-5200](tel:+5531985975200)
+- **Email:** jtecBH@hotmail.com
 - **Website:** [jotatec.netlify.app](https://jotatec.netlify.app)
-- **LinkedIn:** [linkedin.com/in/joaovitorvarella](https://linkedin.com/in/joaovitorvarella)
 
 ---
 

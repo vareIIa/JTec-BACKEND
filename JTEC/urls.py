@@ -16,8 +16,8 @@ schema_view = get_schema_view(
             "3. `GET /api/orders/{order_number}/` — consulta detalhes do pedido"
         ),
         contact=openapi.Contact(
-            name="JTEC — João Vitor Varella",
-            email="jvvarella@hotmail.com",
+            name="JTEC",
+            email="jtecBH@hotmail.com",
             url="https://jotatec.netlify.app",
         ),
     ),
